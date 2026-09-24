@@ -1,0 +1,27 @@
+# IDE and OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Java build output
+backend/target/
+*.class
+*.jar
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+application-local.yml
+
+# Packaged archives and local data exports
+*.zip
+*.rar
+*.7z
+backend/src/main/resources/db/*.sql

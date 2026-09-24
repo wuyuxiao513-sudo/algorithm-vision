@@ -1,0 +1,24 @@
+package top.qtcc.data_structure.annotation;
+
+import java.lang.annotation.*;
+
+/**
+ * 防重复提交注解
+ *
+ * @author qiutuan
+ * @date 2024/12/10
+ */
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+public @interface RepeatSubmit {
+    /**
+     * 间隔时间(ms)，小于此时间视为重复提交
+     */
+    int interval() default 5000;
+
+    /**
+     * 提示消息
+     */
+    String message() default "请勿重复提交";
+} 
